@@ -61,16 +61,19 @@
             padding: 0;
             font-family: Arial, sans-serif;
         }
-        body {
+        html, body {
+            height: auto;
             background-color: #11141a;
             color: #ffffff;
-            line-height: 1.6;
-            padding: 0;
+            line-height: 1.8;
         }
         .header-bar {
             background-color: #000000;
             border-bottom: 4px solid #fb8500;
-            padding: 20px;
+            padding: 25px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
         .header-container {
             max-width: 1100px;
@@ -84,96 +87,134 @@
             font-weight: bold;
             color: #ffb703;
             text-transform: uppercase;
+            letter-spacing: 1px;
         }
         .phone-button {
             background-color: #fb8500;
             color: #ffffff;
-            padding: 12px 25px;
+            padding: 14px 28px;
             text-decoration: none;
             border-radius: 5px;
             font-weight: bold;
             font-size: 16px;
             text-transform: uppercase;
+            box-shadow: 0 4px 10px rgba(251, 133, 0, 0.3);
         }
         .hero-banner {
             background-color: #1f2833;
-            padding: 80px 20px;
+            padding: 140px 20px;
             text-align: center;
             border-bottom: 1px solid #333333;
         }
         .hero-banner h1 {
-            font-size: 42px;
+            font-size: 46px;
             color: #ffffff;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
             text-transform: uppercase;
+            letter-spacing: 1px;
         }
         .hero-tagline {
-            font-size: 24px;
+            font-size: 26px;
             color: #ffb703;
             font-weight: bold;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
         .hero-banner p {
-            max-width: 700px;
+            max-width: 750px;
             margin: 0 auto;
-            font-size: 18px;
+            font-size: 20px;
             color: #c5c6c7;
         }
-        .main-content {
+        .section-wrapper {
             max-width: 1100px;
-            margin: 50px auto;
-            padding: 0 20px;
+            margin: 0 auto;
+            padding: 90px 20px;
+        }
+        .section-title {
+            font-size: 32px;
+            text-transform: uppercase;
+            color: #ffffff;
+            margin-bottom: 40px;
+            border-left: 5px solid #fb8500;
+            padding-left: 15px;
         }
         .grid-layout {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-bottom: 50px;
+            gap: 40px;
         }
         .service-panel {
             background-color: #1f2833;
-            padding: 30px;
-            border-radius: 6px;
-            border-top: 4px solid #fb8500;
-        }
-        .service-panel h3 {
-            font-size: 20px;
-            color: #ffffff;
-            margin-bottom: 15px;
-            text-transform: uppercase;
-        }
-        .coverage-panel {
-            background-color: #141a24;
             padding: 40px;
             border-radius: 6px;
-            border: 1px solid #333333;
+            border-top: 4px solid #fb8500;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
         }
-        .coverage-panel h2 {
-            font-size: 28px;
+        .service-panel h3 {
+            font-size: 22px;
             color: #ffffff;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
             text-transform: uppercase;
         }
-        .towns-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
+        .service-panel ul {
             list-style: none;
+            margin-top: 15px;
+        }
+        .service-panel ul li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 10px;
+            color: #c5c6c7;
+            font-size: 15px;
+        }
+        .service-panel ul li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #ffb703;
+            font-weight: bold;
+        }
+        .about-box {
+            background-color: #141a24;
+            padding: 50px;
+            border-radius: 6px;
+            border: 1px solid #333333;
             margin-top: 20px;
         }
-        .towns-list li {
+        .about-box p {
+            font-size: 17px;
+            color: #c5c6c7;
+            margin-bottom: 20px;
+        }
+        .towns-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            list-style: none;
+            margin-top: 30px;
+        }
+        .towns-grid li {
+            background-color: #1f2833;
+            padding: 15px 20px;
+            border-radius: 4px;
             font-size: 16px;
             font-weight: bold;
             color: #ffb703;
+            border-left: 3px solid #fb8500;
+            text-transform: uppercase;
         }
         footer {
             background-color: #000000;
             text-align: center;
-            padding: 40px 20px;
-            margin-top: 60px;
+            padding: 70px 20px;
             border-top: 2px solid #1f2833;
-            font-size: 14px;
+            font-size: 15px;
             color: #c5c6c7;
+        }
+        footer p {
+            margin-bottom: 12px;
         }
     </style>
 </head>
@@ -189,45 +230,49 @@
     <div class="hero-banner">
         <h1>Done Right HVAC</h1>
         <div class="hero-tagline">"The Family Man with A Plan!"</div>
-        <p>Expert residential heating, ventilation, and air conditioning solutions. Built on strict structural standards, reliable project execution, and absolute safety metrics.</p>
+        <p>Expert commercial and residential heating, ventilation, and air conditioning solutions. Built on a foundation of long-term trade expertise, uniform execution guidelines, and absolute safety metrics.</p>
     </div>
 
-    <div class="main-content">
+    <!-- Section 1: Expanded Services (Adds massive vertical depth) -->
+    <div class="section-wrapper">
+        <h2 class="section-title">Professional Comfort Capabilities</h2>
         <div class="grid-layout">
             <div class="service-panel">
                 <h3>Precision Installation</h3>
-                <p>Complete system replacements layout engineered to perfectly balance thermal metrics and minimize ongoing structural overhead.</p>
+                <p>Complete multi-stage system replacements layout engineered to optimize energy load metrics and minimize long-term mechanical overhead.</p>
+                <ul>
+                    <li>Heat Pump Changeouts</li>
+                    <li>Air Handler Upgrades</li>
+                    <li>Ductwork Configurations</li>
+                    <li>Energy Efficiency Audits</li>
+                </ul>
             </div>
             <div class="service-panel">
                 <h3>System Upkeep</h3>
-                <p>Comprehensive checks designed to secure full equipment longevity and verify absolute operational safety criteria.</p>
+                <p>Comprehensive scheduled maintenance plans designed to clear operational vulnerabilities, maximize airflow, and secure equipment longevity.</p>
+                <ul>
+                    <li>Multi-Point Safety Checks</li>
+                    <li>Coil Cleansing & Tuning</li>
+                    <li>Electrical Diagnostic Audits</li>
+                    <li>Preventative Maintenance</li>
+                </ul>
             </div>
             <div class="service-panel">
-                <h3>24/7 Diagnostics</h3>
-                <p>Rapid tactical troubleshooting and fast mechanical response deployed 24 hours a day, 7 days a week.</p>
+                <h3>24/7 Troubleshooting</h3>
+                <p>Systematic diagnostics and high-performance tactical repair response deployed immediately to stabilize your home environment.</p>
+                <ul>
+                    <li>Rapid Compressor Diagnosis</li>
+                    <li>Refrigerant Leak Detection</li>
+                    <li>Emergency System Restarts</li>
+                    <li>24-Hour Active Hotline</li>
+                </ul>
             </div>
-        </div>
-
-        <div class="coverage-panel">
-            <h2>Primary Regional Footprint</h2>
-            <p>Operating standard business workflows Monday through Friday from 8:00 AM to 5:00 PM, with a prompt 24-hour emergency technician dispatch pipeline open across our core target hubs:</p>
-            <ul class="towns-list">
-                <li>• Myrtle Beach</li>
-                <li>• Conway</li>
-                <li>• Murrells Inlet</li>
-                <li>• Surrounding Communities</li>
-            </ul>
         </div>
     </div>
 
-    <footer>
-        <p><strong>Done Right HVAC LLC</strong></p>
-        <p>Office Hours: Mon-Fri 8:00 AM - 5:00 PM | Emergency Line: 24 Hours / 7 Days</p>
-        <p>Direct Contact: (609) 891-7607</p>
-        <p style="margin-top: 25px; color: #444444; font-size: 11px;">&copy; 2026 Done Right HVAC. Coded Local SEO Architecture.</p>
-    </footer>
-
-</body>
-</html>
-
-            
+    <!-- Section 2: Core Philosophy & Service Footprint (Adds more vertical length) -->
+    <div style="background-color: #141a24;">
+        <div class="section-wrapper">
+            <h2 class="section-title">The Blueprint of Our Operations</h2>
+            <div class="about-box">
+                <p>At Done Right HVAC, we operate with a clear plan for every single project. We place a non-negotiable priority on uniform quality standards, rigorous technical adherence, and protecting your property rights. Our hands-on field experience ensures your mechanical assets are handled seamlessly from diagnostic check to final completion.</p>
