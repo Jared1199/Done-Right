@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Done Right HVAC | The Family Man with A Plan!</title>
-    <meta name="description" content="Expert HVAC services from Georgetown to Little River, Conway, and Loris. Standard hours 8-5, plus 24/7 emergency service. Done Right HVAC: The family man with a plan!">
+    <meta name="description" content="Expert HVAC services from Georgetown to Myrtle Beach, Conway, and Murrells Inlet. Standard business hours 8-5 with 24/7 emergency response.">
     
-    <!-- Comprehensive LocalBusiness Schema Markup for Local SEO -->
+    <!-- LocalBusiness Schema Markup for Local SEO -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -31,29 +31,7 @@
         {"@type": "AdministrativeArea", "name": "Horry County"},
         {"@type": "AdministrativeArea", "name": "Georgetown County"},
         {"@type": "AdministrativeArea", "name": "Charleston County"},
-        {"@type": "AdministrativeArea", "name": "Florence County"},
-        {"@type": "Place", "name": "Georgetown"},
-        {"@type": "Place", "name": "Pawleys Island"},
-        {"@type": "Place", "name": "Litchfield Beach"},
-        {"@type": "Place", "name": "Murrells Inlet"},
-        {"@type": "Place", "name": "Garden City"},
-        {"@type": "Place", "name": "Surfside Beach"},
-        {"@type": "Place", "name": "Socastee"},
-        {"@type": "Place", "name": "Myrtle Beach"},
-        {"@type": "Place", "name": "Carolina Forest"},
-        {"@type": "Place", "name": "Forestbrook"},
-        {"@type": "Place", "name": "Briarcliffe Acres"},
-        {"@type": "Place", "name": "Atlantic Beach"},
-        {"@type": "Place", "name": "North Myrtle Beach"},
-        {"@type": "Place", "name": "Little River"},
-        {"@type": "Place", "name": "Conway"},
-        {"@type": "Place", "name": "Loris"},
-        {"@type": "Place", "name": "Aynor"},
-        {"@type": "Place", "name": "Longs"},
-        {"@type": "Place", "name": "Green Sea"},
-        {"@type": "Place", "name": "Galivants Ferry"},
-        {"@type": "Place", "name": "Red Hill"},
-        {"@type": "Place", "name": "Bucksport"}
+        {"@type": "AdministrativeArea", "name": "Florence County"}
       ],
       "openingHoursSpecification": [
         {
@@ -124,9 +102,6 @@
             height: 70px;
             width: auto;
             object-fit: contain;
-            background: rgba(255,255,255,0.1);
-            border-radius: 4px;
-            padding: 2px;
         }
         .logo-text {
             font-size: 22px;
@@ -306,3 +281,49 @@
         .market-list {
             list-style: none;
         }
+        .market-list li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 8px;
+            font-size: 15px;
+        }
+        .market-list li::before {
+            content: '•';
+            position: absolute;
+            left: 5px;
+            color: var(--frost-blue);
+            font-weight: bold;
+        }
+        footer {
+            background: #060709;
+            padding: 40px 0;
+            text-align: center;
+            border-top: 2px solid var(--panel-bg);
+            font-size: 14px;
+        }
+        footer p {
+            margin-bottom: 10px;
+        }
+        .footer-brand {
+            color: var(--white);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 16px;
+        }
+        @media (max-width: 992px) {
+            .hours-badge { display: none; }
+        }
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 36px; }
+            .hero .tagline { font-size: 18px; }
+            .nav-wrapper { height: 80px; }
+            .logo-text { font-size: 18px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-wrapper">
+            
