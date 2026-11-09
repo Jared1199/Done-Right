@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Done Right HVAC | The Family Man with A Plan!</title>
-    <meta name="description" content="Expert residential and commercial HVAC services from Georgetown to Myrtle Beach, Conway, and Murrells Inlet. Standard hours 8-5 with 24/7 emergency response.">
+    <title>Done Right HVAC | The Family Man with A Plan | Myrtle Beach, Conway, Murrells Inlet</title>
+    <meta name="description" content="Expert residential heating, ventilation, and air conditioning solutions across Horry County. Standard hours 8-5, plus 24/7 rapid emergency diagnostic dispatch.">
     
-    <!-- Verified LocalBusiness Schema Markup for Google SEO -->
+    <!-- Complete Master LocalBusiness Schema Markup for Local SEO -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -34,7 +34,16 @@
         {"@type": "AdministrativeArea", "name": "Florence County"},
         {"@type": "Place", "name": "Myrtle Beach"},
         {"@type": "Place", "name": "Conway"},
-        {"@type": "Place", "name": "Murrells Inlet"}
+        {"@type": "Place", "name": "Murrells Inlet"},
+        {"@type": "Place", "name": "Socastee"},
+        {"@type": "Place", "name": "Carolina Forest"},
+        {"@type": "Place", "name": "Forestbrook"},
+        {"@type": "Place", "name": "Surfside Beach"},
+        {"@type": "Place", "name": "Garden City"},
+        {"@type": "Place", "name": "Pawleys Island"},
+        {"@type": "Place", "name": "Loris"},
+        {"@type": "Place", "name": "Aynor"},
+        {"@type": "Place", "name": "Longs"}
       ],
       "openingHoursSpecification": [
         {
@@ -55,224 +64,256 @@
     </script>
 
     <style>
+        :root {
+            --dark-bg: #0b0c10;
+            --panel-bg: #1f2833;
+            --fire-gold: #ffb703;
+            --fire-orange: #fb8500;
+            --frost-blue: #8ecae6;
+            --ice-blue: #219ebc;
+            --white: #ffffff;
+            --light-text: #c5c6c7;
+            --emergency-red: #d90429;
+        }
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Arial, sans-serif;
         }
         html, body {
             height: auto;
-            background-color: #11141a;
-            color: #ffffff;
+            background-color: var(--dark-bg);
+            color: var(--light-text);
             line-height: 1.8;
         }
-        .header-bar {
+        header {
             background-color: #000000;
-            border-bottom: 4px solid #fb8500;
-            padding: 25px 20px;
+            border-bottom: 4px solid var(--fire-orange);
+            padding: 25px 0;
             position: sticky;
             top: 0;
             z-index: 1000;
         }
-        .header-container {
-            max-width: 1100px;
+        .container {
+            width: 92%;
+            max-width: 1200px;
             margin: 0 auto;
+            padding: 0 15px;
+        }
+        .nav-wrapper {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
+        .logo-group {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .logo-img {
+            height: 65px;
+            width: auto;
+            object-fit: contain;
+        }
         .logo-title {
             font-size: 26px;
-            font-weight: bold;
-            color: #ffb703;
+            font-weight: 800;
+            color: var(--white);
             text-transform: uppercase;
             letter-spacing: 1px;
         }
+        .logo-title span {
+            color: var(--fire-orange);
+        }
         .phone-button {
-            background-color: #fb8500;
-            color: #ffffff;
+            background: linear-gradient(135deg, var(--fire-orange), #e05e00);
+            color: var(--white);
             padding: 14px 28px;
             text-decoration: none;
             border-radius: 5px;
             font-weight: bold;
-            font-size: 16px;
             text-transform: uppercase;
-            box-shadow: 0 4px 10px rgba(251, 133, 0, 0.3);
+            font-size: 15px;
+            letter-spacing: 0.5px;
+            box-shadow: 0 4px 15px rgba(251, 133, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+        .phone-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(251, 133, 0, 0.5);
         }
         .hero-banner {
-            background-color: #1f2833;
-            padding: 140px 20px;
+            background: linear-gradient(rgba(11, 12, 16, 0.9), rgba(11, 12, 16, 0.9));
+            padding: 160px 0;
             text-align: center;
-            border-bottom: 1px solid #333333;
+            border-bottom: 1px solid #252e3b;
+        }
+        .emergency-badge {
+            display: inline-block;
+            background: rgba(217, 4, 41, 0.15);
+            border: 1px solid var(--emergency-red);
+            color: #ff4d6d;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 25px;
         }
         .hero-banner h1 {
-            font-size: 46px;
-            color: #ffffff;
-            margin-bottom: 15px;
+            font-size: 52px;
+            font-weight: 900;
+            color: var(--white);
             text-transform: uppercase;
+            margin-bottom: 15px;
             letter-spacing: 1px;
         }
         .hero-tagline {
-            font-size: 26px;
-            color: #ffb703;
-            font-weight: bold;
-            margin-bottom: 30px;
+            font-size: 28px;
+            color: var(--fire-gold);
+            font-weight: 700;
+            margin-bottom: 35px;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
         }
         .hero-banner p {
-            max-width: 750px;
+            max-width: 800px;
             margin: 0 auto;
-            font-size: 20px;
-            color: #c5c6c7;
+            font-size: 21px;
+            color: var(--light-text);
         }
-        .section-wrapper {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 90px 20px;
+        .section-block {
+            padding: 110px 0;
         }
-        .section-title {
-            font-size: 32px;
+        .section-block.alt-bg {
+            background-color: #141a24;
+            border-top: 1px solid rgba(255,255,255,0.03);
+            border-bottom: 1px solid rgba(255,255,255,0.03);
+        }
+        .section-header-center {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 70px auto;
+        }
+        .section-header-center h2 {
+            font-size: 38px;
+            font-weight: 800;
+            color: var(--white);
             text-transform: uppercase;
-            color: #ffffff;
-            margin-bottom: 40px;
-            border-left: 5px solid #fb8500;
-            padding-left: 15px;
+            margin-bottom: 20px;
         }
-        .grid-layout {
+        .section-header-center p {
+            font-size: 17px;
+            color: var(--light-text);
+        }
+        .accent-bar {
+            width: 70px;
+            height: 4px;
+            background: var(--fire-orange);
+            margin: 20px auto 0 auto;
+        }
+        .grid-3 {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 40px;
         }
-        .service-panel {
-            background-color: #1f2833;
-            padding: 40px;
-            border-radius: 6px;
-            border-top: 4px solid #fb8500;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        .service-card {
+            background-color: var(--panel-bg);
+            padding: 45px 35px;
+            border-radius: 8px;
+            border-top: 4px solid var(--fire-orange);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
         }
-        .service-panel h3 {
-            font-size: 22px;
-            color: #ffffff;
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        .service-card h3 {
+            font-size: 24px;
+            color: var(--white);
             margin-bottom: 20px;
             text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
-        .service-panel ul {
-            list-style: none;
-            margin-top: 15px;
-        }
-        .service-panel ul li {
-            position: relative;
-            padding-left: 20px;
-            margin-bottom: 10px;
-            color: #c5c6c7;
+        .service-card p {
             font-size: 15px;
+            color: var(--light-text);
+            margin-bottom: 25px;
         }
-        .service-panel ul li::before {
+        .bullet-list {
+            list-style: none;
+        }
+        .bullet-list li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 12px;
+            font-size: 15px;
+            color: var(--white);
+        }
+        .bullet-list li::before {
             content: "✓";
             position: absolute;
             left: 0;
-            color: #ffb703;
-            font-weight: bold;
+            color: var(--fire-gold);
+            font-weight: 900;
         }
-        .about-box {
-            background-color: #141a24;
-            padding: 50px;
-            border-radius: 6px;
-            border: 1px solid #333333;
-            margin-top: 20px;
+        .content-split {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 60px;
+            align-items: flex-start;
         }
-        .about-box p {
+        .text-block-left {
+            flex: 1.2;
+            min-width: 340px;
+        }
+        .text-block-left h2 {
+            font-size: 36px;
+            color: var(--white);
+            text-transform: uppercase;
+            margin-bottom: 25px;
+        }
+        .text-block-left p {
             font-size: 17px;
-            color: #c5c6c7;
             margin-bottom: 20px;
         }
-        .towns-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 20px;
-            list-style: none;
-            margin-top: 30px;
+        .feature-box {
+            flex: 0.8;
+            min-width: 340px;
+            background-color: var(--panel-bg);
+            padding: 40px;
+            border-radius: 8px;
+            border: 1px solid rgba(255,255,255,0.05);
         }
-        .towns-grid li {
-            background-color: #1f2833;
-            padding: 15px 20px;
-            border-radius: 4px;
-            font-size: 16px;
-            font-weight: bold;
-            color: #ffb703;
-            border-left: 3px solid #fb8500;
+        .feature-box h4 {
+            font-size: 20px;
+            color: var(--white);
             text-transform: uppercase;
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding-bottom: 10px;
         }
-        footer {
-            background-color: #000000;
+        .procedure-steps {
+            list-style: none;
+        }
+        .procedure-steps li {
+            margin-bottom: 25px;
+            position: relative;
+            padding-left: 45px;
+        }
+        .step-num {
+            position: absolute;
+            left: 0;
+            top: 2px;
+            width: 30px;
+            height: 30px;
+            background-color: var(--fire-orange);
+            color: var(--white);
+            border-radius: 50%;
             text-align: center;
-            padding: 70px 20px;
-            border-top: 2px solid #1f2833;
-            font-size: 15px;
-            color: #c5c6c7;
+            line-height: 30px;
+            font-weight: bold;
+            font-size: 14px;
         }
-        footer p {
-            margin-bottom: 12px;
-        }
-    </style>
-</head>
-<body>
-
-    <div class="header-bar">
-        <div class="header-container">
-            <div class="logo-title">Done Right HVAC</div>
-            <a href="tel:6098917607" class="phone-button">Call (609) 891-7607</a>
-        </div>
-    </div>
-
-    <div class="hero-banner">
-        <h1>Done Right HVAC</h1>
-        <div class="hero-tagline">"The Family Man with A Plan!"</div>
-        <p>Expert commercial and residential heating, ventilation, and air conditioning solutions. Built on a foundation of long-term trade expertise, uniform execution guidelines, and absolute safety metrics.</p>
-    </div>
-
-    <!-- Section 1: Expanded Services (Adds massive vertical depth) -->
-    <div class="section-wrapper">
-        <h2 class="section-title">Professional Comfort Capabilities</h2>
-        <div class="grid-layout">
-            <div class="service-panel">
-                <h3>Precision Installation</h3>
-                <p>Complete multi-stage system replacements layout engineered to optimize energy load metrics and minimize long-term mechanical overhead.</p>
-                <ul>
-                    <li>Heat Pump Changeouts</li>
-                    <li>Air Handler Upgrades</li>
-                    <li>Ductwork Configurations</li>
-                    <li>Energy Efficiency Audits</li>
-                </ul>
-            </div>
-            <div class="service-panel">
-                <h3>System Upkeep</h3>
-                <p>Comprehensive scheduled maintenance plans designed to clear operational vulnerabilities, maximize airflow, and secure equipment longevity.</p>
-                <ul>
-                    <li>Multi-Point Safety Checks</li>
-                    <li>Coil Cleansing & Tuning</li>
-                    <li>Electrical Diagnostic Audits</li>
-                    <li>Preventative Maintenance</li>
-                </ul>
-            </div>
-            <div class="service-panel">
-                <h3>24/7 Troubleshooting</h3>
-                <p>Systematic diagnostics and high-performance tactical repair response deployed immediately to stabilize your home environment.</p>
-                <ul>
-                    <li>Rapid Compressor Diagnosis</li>
-                    <li>Refrigerant Leak Detection</li>
-                    <li>Emergency System Restarts</li>
-                    <li>24-Hour Active Hotline</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <!-- Section 2: Core Philosophy & Service Footprint (Adds more vertical length) -->
-    <div style="background-color: #141a24;">
-        <div class="section-wrapper">
-            <h2 class="section-title">The Blueprint of Our Operations</h2>
-            <div class="about-box">
-                <p>At Done Right HVAC, we operate with a clear plan for every single project. We place a non-negotiable priority on uniform quality standards, rigorous technical adherence, and protecting your property rights. Our hands-on field experience ensures your mechanical assets are handled seamlessly from diagnostic check to final completion.</p>
