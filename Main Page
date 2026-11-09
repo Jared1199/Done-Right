@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Done Right HVAC | The Family Man with A Plan!</title>
+    <meta name="description" content="Expert HVAC services from Georgetown to Little River, Conway, and Loris. Standard hours 8-5, plus 24/7 emergency service. Done Right HVAC: The family man with a plan!">
+    
+    <!-- Comprehensive LocalBusiness Schema Markup for Local SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HVACBusiness",
+      "name": "Done Right HVAC",
+      "image": "image_96mOe6.png", 
+      "telephone": "+1-609-891-7607",
+      "url": "https://donerighthvac.com",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Myrtle Beach",
+        "addressRegion": "SC",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 33.6891,
+        "longitude": -78.8867
+      },
+      "areaServed": [
+        {"@type": "AdministrativeArea", "name": "Horry County"},
+        {"@type": "AdministrativeArea", "name": "Georgetown County"},
+        {"@type": "AdministrativeArea", "name": "Charleston County"},
+        {"@type": "AdministrativeArea", "name": "Florence County"},
+        {"@type": "Place", "name": "Georgetown"},
+        {"@type": "Place", "name": "Pawleys Island"},
+        {"@type": "Place", "name": "Litchfield Beach"},
+        {"@type": "Place", "name": "Murrells Inlet"},
+        {"@type": "Place", "name": "Garden City"},
+        {"@type": "Place", "name": "Surfside Beach"},
+        {"@type": "Place", "name": "Socastee"},
+        {"@type": "Place", "name": "Myrtle Beach"},
+        {"@type": "Place", "name": "Carolina Forest"},
+        {"@type": "Place", "name": "Forestbrook"},
+        {"@type": "Place", "name": "Briarcliffe Acres"},
+        {"@type": "Place", "name": "Atlantic Beach"},
+        {"@type": "Place", "name": "North Myrtle Beach"},
+        {"@type": "Place", "name": "Little River"},
+        {"@type": "Place", "name": "Conway"},
+        {"@type": "Place", "name": "Loris"},
+        {"@type": "Place", "name": "Aynor"},
+        {"@type": "Place", "name": "Longs"},
+        {"@type": "Place", "name": "Green Sea"},
+        {"@type": "Place", "name": "Galivants Ferry"},
+        {"@type": "Place", "name": "Red Hill"},
+        {"@type": "Place", "name": "Bucksport"}
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "08:00",
+          "closes": "17:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "opens": "00:00",
+          "closes": "23:59",
+          "description": "24/7 Emergency Service Available"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --dark-bg: #0b0c10;
+            --panel-bg: #1f2833;
+            --fire-gold: #ffb703;
+            --fire-orange: #fb8500;
+            --frost-blue: #8ecae6;
+            --ice-blue: #219ebc;
+            --white: #ffffff;
+            --light-text: #c5c6c7;
+            --emergency-red: #d90429;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+        }
+        body {
+            background-color: var(--dark-bg);
+            color: var(--light-text);
+            line-height: 1.6;
+        }
+        header {
+            background: rgba(11, 12, 16, 0.95);
+            border-bottom: 2px solid var(--fire-orange);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(5px);
+        }
+        .container {
+            width: 92%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 90px;
+        }
+        .brand-identity {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .logo-img {
+            height: 70px;
+            width: auto;
+            object-fit: contain;
+        }
+        .logo-text {
+            font-size: 22px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            background: linear-gradient(45deg, var(--fire-gold), var(--fire-orange));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .header-ctas {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .hours-badge {
+            font-size: 13px;
+            font-weight: 600;
+            text-align: right;
+            color: var(--light-text);
+            line-height: 1.3;
+        }
+        .hours-badge span {
+            color: var(--fire-gold);
+            display: block;
+        }
+        .phone-cta {
+            background: linear-gradient(135deg, var(--fire-orange), #e05e00);
+            color: var(--white);
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            box-shadow: 0 4px 15px rgba(251, 133, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+        .phone-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(251, 133, 0, 0.5);
+        }
+        .hero {
+            position: relative;
+            background: linear-gradient(rgba(11, 12, 16, 0.85), rgba(11, 12, 16, 0.85)), url('https://unsplash.com') no-repeat center center/cover;
+            padding: 140px 0;
+            text-align: center;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        .emergency-banner {
+            display: inline-block;
+            background: rgba(217, 4, 41, 0.2);
+            border: 1px solid var(--emergency-red);
+            color: #ff4d6d;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 900;
+            color: var(--white);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+        .tagline {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--fire-gold);
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .hero p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto 40px auto;
+            color: var(--light-text);
+        }
+        .services {
+            padding: 80px 0;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 36px;
+            font-weight: 800;
+            text-transform: uppercase;
+            color: var(--white);
+            margin-bottom: 50px;
+            position: relative;
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: var(--ice-blue);
+            margin: 15px auto 0 auto;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .card {
+            background: var(--panel-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 30px;
+        }
+        .card-content h3 {
+            font-size: 20px;
+            color: var(--white);
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+        .card-badge {
+            display: inline-block;
+            font-size: 11px;
+            background: var(--emergency-red);
+            color: var(--white);
+            padding: 2px 8px;
+            border-radius: 3px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        .local-coverage {
+            background: #141a24;
+            padding: 80px 0;
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+        .coverage-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 50px auto;
+        }
+        .coverage-intro h2 {
+            font-size: 36px;
+            color: var(--white);
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+        .market-sections {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        .market-column {
+            background: var(--panel-bg);
+            padding: 25px;
+            border-radius: 6px;
+            border-left: 4px solid var(--fire-orange);
+        }
+        .market-column h3 {
+            color: var(--white);
+            font-size: 18px;
