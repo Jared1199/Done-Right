@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Done Right HVAC | The Family Man with A Plan</title>
-    <meta name="description" content="Expert residential heating, ventilation, and air conditioning solutions across Horry County. Standard hours 8-5, plus 24/7 rapid emergency diagnostic dispatch.">
+    <meta name="description" content="Expert residential heating, ventilation, and air conditioning solutions across Horry County. Standard business hours 8-5 with 24/7 rapid emergency dispatch.">
     
     <!-- Complete Master LocalBusiness Schema Markup for Local SEO -->
     <script type="application/ld+json">
@@ -71,34 +71,24 @@
             font-family: Arial, sans-serif;
         }
         html, body {
-            height: auto;
+            height: auto !important;
+            min-height: 100%;
             background-color: #11141a;
-            color: #c5c6c7;
+            color: #ffffff;
             line-height: 1.8;
+            overflow-y: auto !important;
         }
         header {
             background-color: #000000;
             border-bottom: 4px solid #fb8500;
             padding: 25px 20px;
         }
-        .container {
-            width: 92%;
-            max-width: 1200px;
+        .header-container {
+            max-width: 1100px;
             margin: 0 auto;
-        }
-        .header-flex {
             display: flex;
             justify-content: space-between;
             align-items: center;
-        }
-        .logo-group {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-        .logo-img {
-            height: 65px;
-            width: auto;
         }
         .logo-title {
             font-size: 26px;
@@ -119,220 +109,119 @@
             text-transform: uppercase;
             font-size: 15px;
         }
-        .hero-banner {
-            background-color: #141a24;
-            padding: 140px 20px;
-            text-align: center;
-            border-bottom: 1px solid #252e3b;
+        .main-body {
+            max-width: 800px;
+            margin: 60px auto;
+            padding: 0 20px;
         }
-        .emergency-badge {
-            display: inline-block;
-            background-color: rgba(217, 4, 41, 0.15);
+        .emergency-banner {
+            background-color: rgba(217, 4, 41, 0.2);
             border: 1px solid #d90429;
             color: #ff4d6d;
-            padding: 8px 20px;
-            border-radius: 30px;
-            font-size: 13px;
+            padding: 12px;
+            border-radius: 6px;
             font-weight: bold;
             text-transform: uppercase;
-            margin-bottom: 25px;
+            margin-bottom: 40px;
+            text-align: center;
         }
-        .hero-banner h1 {
-            font-size: 48px;
-            font-weight: bold;
+        h1 {
+            font-size: 38px;
             color: #ffffff;
             text-transform: uppercase;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
         }
-        .hero-tagline {
-            font-size: 26px;
+        .tagline {
+            font-size: 24px;
             color: #ffb703;
             font-weight: bold;
-            margin-bottom: 35px;
             text-transform: uppercase;
+            margin-bottom: 30px;
         }
-        .hero-banner p {
-            max-width: 800px;
-            margin: 0 auto;
-            font-size: 20px;
-        }
-        .section-block {
-            padding: 100px 20px;
-        }
-        .section-block-alt {
-            padding: 100px 20px;
-            background-color: #141a24;
-            border-top: 1px solid #252e3b;
-            border-bottom: 1px solid #252e3b;
-        }
-        .section-header-center {
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto 60px auto;
-        }
-        .section-header-center h2 {
-            font-size: 36px;
-            font-weight: bold;
-            color: #ffffff;
-            text-transform: uppercase;
-            margin-bottom: 20px;
-        }
-        .accent-bar {
-            width: 70px;
-            height: 4px;
-            background: #fb8500;
-            margin: 20px auto 0 auto;
-        }
-        .grid-3 {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
-        }
-        .service-card {
-            background-color: #1f2833;
-            padding: 45px 35px;
-            border-radius: 8px;
-            border-top: 4px solid #fb8500;
-        }
-        .service-card h3 {
-            font-size: 22px;
-            color: #ffffff;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-        }
-        .service-card p {
-            font-size: 15px;
+        .text-p {
+            font-size: 17px;
+            color: #c5c6c7;
             margin-bottom: 25px;
         }
-        .bullet-list {
-            list-style: none;
-        }
-        .bullet-list li {
-            position: relative;
-            padding-left: 25px;
-            margin-bottom: 12px;
-            font-size: 15px;
+        h2 {
+            font-size: 26px;
             color: #ffffff;
+            text-transform: uppercase;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #fb8500;
+            padding-bottom: 5px;
         }
-        .bullet-list li::before {
+        .info-list {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+        .info-list li {
+            font-size: 16px;
+            margin-bottom: 12px;
+            padding-left: 25px;
+            position: relative;
+        }
+        .info-list li::before {
             content: "✓";
             position: absolute;
             left: 0;
             color: #ffb703;
             font-weight: bold;
         }
-        .content-split {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 60px;
-        }
-        .text-block-left {
-            flex: 1.2;
-            min-width: 340px;
-        }
-        .text-block-left h2 {
-            font-size: 34px;
-            color: #ffffff;
-            text-transform: uppercase;
-            margin-bottom: 25px;
-        }
-        .text-block-left p {
-            font-size: 17px;
-            margin-bottom: 20px;
-        }
-        .feature-box {
-            flex: 0.8;
-            min-width: 340px;
-            background-color: #1f2833;
-            padding: 40px;
-            border-radius: 8px;
-        }
-        .feature-box h4 {
-            font-size: 20px;
-            color: #ffffff;
-            text-transform: uppercase;
-            margin-bottom: 20px;
-            border-bottom: 1px solid #333333;
-            padding-bottom: 10px;
-        }
-        .procedure-steps {
-            list-style: none;
-        }
-        .procedure-steps li {
-            margin-bottom: 25px;
-            position: relative;
-            padding-left: 45px;
-        }
-        .step-num {
-            position: absolute;
-            left: 0;
-            top: 2px;
-            width: 30px;
-            height: 30px;
-            background-color: #fb8500;
-            color: #ffffff;
-            border-radius: 50%;
-            text-align: center;
-            line-height: 30px;
-            font-weight: bold;
-        }
-        .procedure-steps h5 {
-            font-size: 16px;
-            color: #ffffff;
-            text-transform: uppercase;
-            margin-bottom: 5px;
-        }
-        .faq-wrapper {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-        .faq-item {
-            background-color: #1f2833;
-            padding: 30px;
-            border-radius: 6px;
-            margin-bottom: 20px;
-            border-left: 4px solid #219ebc;
-        }
-        .faq-item h4 {
-            font-size: 18px;
-            color: #ffffff;
-            margin-bottom: 10px;
-            text-transform: uppercase;
-        }
-        .towns-panel-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 20px;
-        }
-        .town-card {
-            background-color: #1f2833;
-            padding: 20px;
-            border-radius: 6px;
-            text-align: center;
-        }
-        .town-card h4 {
-            font-size: 16px;
-            color: #ffb703;
-            text-transform: uppercase;
-        }
-        .town-card p {
-            font-size: 13px;
-            margin-top: 5px;
-        }
         footer {
             background-color: #000000;
-            padding: 80px 20px;
-            border-top: 3px solid #1f2833;
-            font-size: 15px;
             text-align: center;
+            padding: 60px 20px;
+            margin-top: 80px;
+            border-top: 2px solid #1f2833;
+            font-size: 14px;
+            color: #c5c6c7;
         }
-        .footer-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 40px;
-            margin-bottom: 50px;
-            text-align: left;
-        }
-        .footer-grid h4 {
-            color: #ffffff;
-            text-transform: uppercase;
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo-title">Done Right <span>HVAC</span></div>
+            <a href="tel:6098917607" class="phone-button">Call (609) 891-7607</a>
+        </div>
+    </header>
+
+    <div class="main-body">
+        <div class="emergency-banner">🚨 24-Hour Urgent Technical Dispatch Deployed Daily</div>
+        
+        <h1>Done Right HVAC</h1>
+        <div class="tagline">"The Family Man with A Plan!"</div>
+        
+        <p class="text-p">Providing expert residential heating, ventilation, and air conditioning mechanical blueprints across Horry County and surrounding coastal corridors. We execute operations with strict technical transparency, uniform code alignment, and absolute protection of your structural property values.</p>
+        
+        <p class="text-p">Backed by a professional trade background in plumbing engineering and mechanical installation design, our technical team calculate equipment loads precisely to keep indoor climates balanced through extreme seasonal changes.</p>
+
+        <h2>Core Service Solutions</h2>
+        <ul class="info-list">
+            <li><strong>System Installation:</strong> Complete high-efficiency system configurations, changeouts, heat pumps, and duct overhauls engineered perfectly.</li>
+            <li><strong>Technical Upkeep:</strong> Multi-point electrical checks, condenser cleanings, airflow balancing, and safety verifications to extend mechanical life.</li>
+            <li><strong>24/7 Troubleshooting:</strong> Rapid diagnostic fault tracking, emergency compressor repairs, component updates, and immediate service.</li>
+        </ul>
+
+        <h2>Primary Market Footprint</h2>
+        <p class="text-p">Standard operations deploy promptly Monday through Friday from 8:00 AM to 5:00 PM. High-performance mechanical emergency dispatch paths remain fully open 24 hours a day, 7 days a week across our main target hubs:</p>
+        <ul class="info-list">
+            <li>• Myrtle Beach Core Metro (Socastee, Carolina Forest, Forestbrook, Surfside Beach, Garden City)</li>
+            <li>• Historic Conway Regional Hub (Conway, Red Hill, Bucksport Coastal Areas)</li>
+            <li>• South Strand Coastal Lines (Murrells Inlet, Pawleys Island, Litchfield Beach, Georgetown)</li>
+            <li>• Inland Network Zones (Loris, Aynor, Longs, Green Sea, Galivants Ferry communities)</li>
+        </ul>
+    </div>
+
+    <footer>
+        <p style="font-size: 16px; color: #ffffff; font-weight: bold; margin-bottom: 10px;">Done Right HVAC LLC</p>
+        <p>Operational Hotline Support: (609) 891-7607</p>
+        <p>Office Hours: M-F 8am - 5pm | Emergency Support: 24/7/365</p>
+        <p style="margin-top: 30px; color: #444444; font-size: 11px;">&copy; 2026 Done Right HVAC. Coded Local Search Engine Architecture. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
