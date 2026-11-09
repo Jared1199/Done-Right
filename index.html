@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Done Right HVAC | The Family Man with A Plan</title>
-    <meta name="description" content="Expert residential heating, ventilation, and air conditioning solutions across Horry County. Standard business hours 8-5 with 24/7 rapid emergency dispatch.">
+    <title>Done Right HVAC | Myrtle Beach AC Repair & Heating | The Family Man with A Plan</title>
+    <meta name="description" content="Dependable, honest air conditioning and heating services in Myrtle Beach, Conway, and Murrells Inlet. Standard hours 8-5, with 24/7 fast emergency repair.">
     
     <!-- Complete Master LocalBusiness Schema Markup for Local SEO -->
     <script type="application/ld+json">
@@ -73,15 +73,16 @@
         html, body {
             height: auto !important;
             min-height: 100%;
-            background-color: #11141a;
-            color: #ffffff;
+            background-color: #f8f9fa;
+            color: #2b2d42;
             line-height: 1.8;
             overflow-y: auto !important;
         }
         header {
             background-color: #000000;
             border-bottom: 4px solid #fb8500;
-            padding: 25px 20px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
         .header-container {
             max-width: 1100px;
@@ -89,6 +90,21 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+        }
+        .logo-group {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .logo-img-frame {
+            height: 65px;
+            width: auto;
+            max-width: 120px;
+        }
+        .logo-img-frame img {
+            height: 100%;
+            width: auto;
+            object-fit: contain;
         }
         .logo-title {
             font-size: 26px;
@@ -108,75 +124,163 @@
             font-weight: bold;
             text-transform: uppercase;
             font-size: 15px;
+            box-shadow: 0 4px 10px rgba(251, 133, 0, 0.2);
+        }
+        .hero-section {
+            background-color: #ffffff;
+            padding: 80px 20px;
+            border-bottom: 1px solid #e5e5e5;
         }
         .main-body {
-            max-width: 800px;
-            margin: 60px auto;
+            max-width: 1100px;
+            margin: 0 auto;
             padding: 0 20px;
         }
-        .emergency-banner {
-            background-color: rgba(217, 4, 41, 0.2);
-            border: 1px solid #d90429;
-            color: #ff4d6d;
-            padding: 12px;
+        .emergency-banner-clean {
+            background-color: #fff3cd;
+            color: #856404;
+            padding: 15px;
             border-radius: 6px;
             font-weight: bold;
             text-transform: uppercase;
             margin-bottom: 40px;
             text-align: center;
+            font-size: 15px;
+            border-left: 5px solid #fb8500;
         }
         h1 {
-            font-size: 38px;
-            color: #ffffff;
+            font-size: 42px;
+            color: #1a1c23;
             text-transform: uppercase;
             margin-bottom: 10px;
         }
         .tagline {
             font-size: 24px;
-            color: #ffb703;
+            color: #fb8500;
             font-weight: bold;
             text-transform: uppercase;
             margin-bottom: 30px;
         }
         .text-p {
-            font-size: 17px;
-            color: #c5c6c7;
+            font-size: 18px;
+            color: #4a4e69;
             margin-bottom: 25px;
         }
-        h2 {
-            font-size: 26px;
-            color: #ffffff;
-            text-transform: uppercase;
-            margin-top: 50px;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #fb8500;
-            padding-bottom: 5px;
+        
+        /* LIVE PHOTO: Main Showcase Banner Image */
+        .photo-space-hero {
+            width: 100%;
+            height: 400px;
+            border-radius: 8px;
+            margin: 45px 0;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            overflow: hidden;
         }
+        .photo-space-hero img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        h2 {
+            font-size: 28px;
+            color: #1a1c23;
+            text-transform: uppercase;
+            margin-top: 60px;
+            margin-bottom: 25px;
+            border-bottom: 3px solid #fb8500;
+            padding-bottom: 8px;
+        }
+        
+        /* PHOTO SPACE: Service Grid Layout with Integrated Live Images */
+        .services-layout-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        .service-block-card {
+            background-color: #ffffff;
+            border: 1px solid #e5e5e5;
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+        }
+        .photo-space-service {
+            width: 100%;
+            height: 200px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        .photo-space-service img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
         .info-list {
             list-style: none;
-            margin-bottom: 30px;
         }
         .info-list li {
             font-size: 16px;
             margin-bottom: 12px;
             padding-left: 25px;
             position: relative;
+            color: #4a4e69;
         }
         .info-list li::before {
             content: "✓";
             position: absolute;
             left: 0;
-            color: #ffb703;
+            color: #fb8500;
             font-weight: bold;
+            font-size: 18px;
         }
+        
+        .towns-container-box {
+            background-color: #ffffff;
+            border: 1px solid #e5e5e5;
+            border-radius: 8px;
+            padding: 35px;
+            margin-bottom: 60px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+        }
+        .towns-list-flex {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .towns-list-flex li {
+            font-size: 16px;
+            font-weight: bold;
+            color: #1a1c23;
+            padding-left: 20px;
+            position: relative;
+        }
+        .towns-list-flex li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #fb8500;
+            font-weight: bold;
+            font-size: 20px;
+            top: -2px;
+        }
+
         footer {
-            background-color: #000000;
+            background-color: #1a1c23;
             text-align: center;
             padding: 60px 20px;
-            margin-top: 80px;
-            border-top: 2px solid #1f2833;
+            border-top: 4px solid #fb8500;
             font-size: 14px;
             color: #c5c6c7;
+        }
+        footer p {
+            margin-bottom: 8px;
         }
     </style>
 </head>
@@ -184,44 +288,23 @@
 
     <header>
         <div class="header-container">
-            <div class="logo-title">Done Right <span>HVAC</span></div>
+            <div class="logo-group">
+                <!-- LIVE LOGO PATH: Your real uploaded logo loads automatically right here -->
+                <div class="logo-img-frame">
+                    <img src="image_96mOe6.png" alt="Done Right HVAC Logo" alt="Done Right HVAC" onerror="this.src='https://unsplash.com';">
+                </div>
+                <div class="logo-title">Done Right <span>HVAC</span></div>
+            </div>
             <a href="tel:6098917607" class="phone-button">Call (609) 891-7607</a>
         </div>
     </header>
 
-    <div class="main-body">
-        <div class="emergency-banner">🚨 24-Hour Urgent Technical Dispatch Deployed Daily</div>
-        
-        <h1>Done Right HVAC</h1>
-        <div class="tagline">"The Family Man with A Plan!"</div>
-        
-        <p class="text-p">Providing expert residential heating, ventilation, and air conditioning mechanical blueprints across Horry County and surrounding coastal corridors. We execute operations with strict technical transparency, uniform code alignment, and absolute protection of your structural property values.</p>
-        
-        <p class="text-p">Backed by a professional trade background in plumbing engineering and mechanical installation design, our technical team calculate equipment loads precisely to keep indoor climates balanced through extreme seasonal changes.</p>
-
-        <h2>Core Service Solutions</h2>
-        <ul class="info-list">
-            <li><strong>System Installation:</strong> Complete high-efficiency system configurations, changeouts, heat pumps, and duct overhauls engineered perfectly.</li>
-            <li><strong>Technical Upkeep:</strong> Multi-point electrical checks, condenser cleanings, airflow balancing, and safety verifications to extend mechanical life.</li>
-            <li><strong>24/7 Troubleshooting:</strong> Rapid diagnostic fault tracking, emergency compressor repairs, component updates, and immediate service.</li>
-        </ul>
-
-        <h2>Primary Market Footprint</h2>
-        <p class="text-p">Standard operations deploy promptly Monday through Friday from 8:00 AM to 5:00 PM. High-performance mechanical emergency dispatch paths remain fully open 24 hours a day, 7 days a week across our main target hubs:</p>
-        <ul class="info-list">
-            <li>• Myrtle Beach Core Metro (Socastee, Carolina Forest, Forestbrook, Surfside Beach, Garden City)</li>
-            <li>• Historic Conway Regional Hub (Conway, Red Hill, Bucksport Coastal Areas)</li>
-            <li>• South Strand Coastal Lines (Murrells Inlet, Pawleys Island, Litchfield Beach, Georgetown)</li>
-            <li>• Inland Network Zones (Loris, Aynor, Longs, Green Sea, Galivants Ferry communities)</li>
-        </ul>
-    </div>
-
-    <footer>
-        <p style="font-size: 16px; color: #ffffff; font-weight: bold; margin-bottom: 10px;">Done Right HVAC LLC</p>
-        <p>Operational Hotline Support: (609) 891-7607</p>
-        <p>Office Hours: M-F 8am - 5pm | Emergency Support: 24/7/365</p>
-        <p style="margin-top: 30px; color: #444444; font-size: 11px;">&copy; 2026 Done Right HVAC. Coded Local Search Engine Architecture. All Rights Reserved.</p>
-    </footer>
-
-</body>
-</html>
+    <div class="hero-section">
+        <div class="main-body">
+            <div class="emergency-banner-clean">🚨 24/7 Emergency AC & Heating Repairs — Fast Local Response</div>
+            
+            <h1>Done Right HVAC</h1>
+            <div class="tagline">"The Family Man with A Plan!"</div>
+            
+            <p class="text-p">When your air conditioning goes out in the middle of a hot summer day or your heating quits on a freezing night, you don't need guess-work or an overpriced sales pitch. You need an honest technician who shows up on time, diagnoses the problem correctly, and fixes it right the first time.</p>
+            
