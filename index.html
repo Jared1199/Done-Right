@@ -39,7 +39,7 @@
         {"@type": "Place", "name": "Carolina Forest"},
         {"@type": "Place", "name": "Forestbrook"},
         {"@type": "Place", "name": "Surfside Beach"},
-        {"@type": "Place", "name": "Garden City"},
+        {"@type": "Garden City", "name": "Garden City"},
         {"@type": "Place", "name": "Pawleys Island"},
         {"@type": "Place", "name": "Loris"},
         {"@type": "Place", "name": "Aynor"},
@@ -83,9 +83,11 @@
         }
         html, body {
             height: auto;
+            min-height: 100%;
             background-color: var(--dark-bg);
             color: var(--light-text);
             line-height: 1.8;
+            overflow-x: hidden;
         }
         header {
             background-color: #000000;
@@ -316,6 +318,3 @@
             line-height: 30px;
             font-weight: bold;
             font-size: 14px;
-        }
-        .procedure-steps h5 {
-            font-size: 16px;
